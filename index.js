@@ -1,61 +1,67 @@
-// Q.1  Write one example explaining how you can write a callback function ?
-
-    // const name =(Name, callback)=>{
-    //     console.log(Name)
-    //     callback()
-    // }
-    // const lname=()=>{
-    //     console.log("Raut")
-    // }
-
-    // name("Abhi", lname)
-
-// Q.2Write callback function to print numbers from 1 to 7, in which 1 should be printed after 1 sec , 2 should be printed after 2 sec, 3 should be printed after 3 sec and so on. 
-
-// Explain callback hell.
-// Numbers
-// 1
-// 2
-// 3
-// 4
-// 5
-// 6
-// 7
-
-// const fun = ()=>{
-//    setTimeout(() => {
-//         console.log("1")
-//         setTimeout(() => {
-//             console.log("2")
-//             setTimeout(() => {
-//                 console.log("3")
-//                 setTimeout(() => {
-//                     console.log("4")
-//                     setTimeout(() => {
-//                         console.log("5")
-//                         setTimeout(() => {
-//                             console.log("6")
-//                             setTimeout(() => {
-//                                 console.log("7")
-//                             }, 1000);
-//                         }, 1000);
-//                     }, 1000);
-//                 }, 1000);
-//             }, 1000);
-//         }, 1000);
-//    }, 1000);
+// Create one function with zero parameter having a console statement;
+// function fun() {
+//     console.log("Hello world");
 // }
+// fun();
 
-// fun()
+// 2.Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"
+// function Sum(a, b) {
+//     console.log(a + b);
+// }
+// Sum(3,4)
 
-// Q.3 "Write promise function to print numbers from 1 to 7, in which 1 should be printed after 1 sec , 2 should be printed after 2 sec, 3 should be printed after 3 sec and so on. 
+// 3.Create one arrow function
+// let a = ()=> {
+//     console.log("Hello...");
+// }
+// a();
 
-// Numbers
-// 1
-// 2
-// 3
-// 4
-// 5
-// 6
-// 7
+// 4."Print output: 
+// var x = 21;
+// var girl = function () {
+//     console.log(x);
+//     var x = 20;
+// };
+// girl ();
+// Ans undefined
 
+// 5."Print output: 
+// var x = 21;
+// girl ();
+// console.log(x)
+// function girl() {
+//     console.log(x);
+//     var x = 20;
+// };
+// Ans undefined 21
+
+// 6."Print output
+// var x = 21;
+// a();
+// b();
+
+// function a() {    
+//    x = 20;
+//   console.log(x);
+// };
+// function b() {    
+//     x = 40;
+//    console.log(x);
+// };
+// Ans 20 40
+
+// 7.Write a function that accepts parameter n and returns factorial of n
+// function factorial(n) {
+//     let answer = 1;
+//     if(n==0 || n == 1) {
+//         return answer
+//     } else {
+//         for(var i = n; i >=1; i--) {
+//             answer = answer * 1
+//         }
+//         return answer
+//     }
+// }
+// let n = 7;
+// let answer = factorial(n)
+// console.log(answer);
